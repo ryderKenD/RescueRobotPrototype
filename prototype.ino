@@ -104,7 +104,7 @@ void leftStop()
 
 void rightGo()
 {
-  analogWrite(EnA, 255);
+  analogWrite(EnB, 255);
   digitalWrite(In3, HIGH);
   digitalWrite(In4, LOW);
 }
