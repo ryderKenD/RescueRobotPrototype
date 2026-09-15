@@ -58,11 +58,6 @@ void loop() {
   rightGo();
 }
 
-long microsecondsToCentimeters(long microseconds)
-{
-  return microseconds / 29 / 2;
-}
-
 void colourCheck()
 {
   // red reading
