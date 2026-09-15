@@ -2,8 +2,6 @@
 QTRSensors qtr;
 const uint8_t SensorCount = 4;
 uint16_t sensorValues[SensorCount];
-const int trigPin = 13;
-const int echoPin = 12;
 const int S0 = A2;
 const int S1 = A1;
 const int S2 = A4;
@@ -22,8 +20,6 @@ void setup() {
   // put your setup code here, to run once:
   qtr.setTypeRC();
   qtr.setSensorPins((const uint8_t[]){1, 2, 3, 9}, SensorCount);
-  pinMode(trigPin, OUTPUT);
-  pinMode(echoPin, INPUT);
   pinMode(S0, OUTPUT);
   pinMode(S1, OUTPUT);
   pinMode(S2, OUTPUT);
